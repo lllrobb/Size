@@ -1,0 +1,23 @@
+name: Size
+version: 1.0.0
+main: ySimmer\Size\Main
+api: 5.0.0
+author: ySimmer
+description: Plugin para cambiar el tamaño de los jugadores
+
+commands:
+  size:
+    description: Comandos para cambiar el tamaño de los jugadores
+    usage: "/size <set|reset|credits|help> [valor] [jugador]"
+    permission: size.use
+
+permissions:
+  size.use:
+    description: Permite usar comandos básicos do size
+    default: op
+  size.others:
+    description: Permite alterar tamanho de outros jogadores
+    default: op
+  size.admin:
+    description: Acesso completo aos comandos
+    default: op
