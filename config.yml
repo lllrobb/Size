@@ -1,0 +1,25 @@
+sounds:
+  enabled: true
+  sound_name: "note.bell" # se puede poner otros sonidos tambien
+  volume: 1.0
+  pitch: 1.0
+
+messages:
+  size_changed_self: "§6§lTu tamaño ahora es: §a{size}"
+  size_changed_other_sender: "§6§l¡Cambiaste el tamaño de §e{player}§6§l a: §a{size}!"
+  size_changed_other_target: "§6§lTu tamaño ahora es: §a{size}"
+
+  size_reset_self: "§6§lTu tamaño fue reseteado a: §a1.0"
+  size_reset_other_sender: "§6§l¡Reseteaste el tamaño de §e{player}§6§l!"
+  size_reset_other_target: "§6§lTu tamaño fue reseteado a: §a1.0"
+  
+  error_players_only: "§c¡Este comando solo puede ser usado por jugadores!"
+  error_usage_set: "§cUso: /size set <0.1-10> [jugador]"
+  error_invalid_size: "§c¡El tamaño debe estar entre 0.1 y 10!"
+  error_no_permission_others: "§c¡No tienes permiso para cambiar el tamaño de otros jugadores!"
+  error_player_not_found: "§c¡Jugador '{player}' no encontrado!"
+  error_no_permission_reset_others: "§c¡No tienes permiso para resetear el tamaño de otros jugadores!"
+  error_invalid_subcommand: "§c¡Subcomando inválido! Usa /size help para ver los comandos disponibles."
+
+  plugin_enabled: "§a¡Size Plugin habilitado!"
+  plugin_disabled: "§c¡Size Plugin deshabilitado!"
