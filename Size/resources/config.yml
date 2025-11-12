@@ -1,4 +1,4 @@
-# Configuración del Plugin Size
+config: v1-ALPHA8 #DON'T TOUCH!!!!!!!!!!!!!!!!!!!!!!!
 # Desarrollado por ySimmer
 
 # Configuración de sonidos
@@ -32,4 +32,5 @@ messages:
   
   # Mensajes informativos
   plugin_enabled: "§a¡Size Plugin habilitado!"
+
   plugin_disabled: "§c¡Size Plugin deshabilitado!"
