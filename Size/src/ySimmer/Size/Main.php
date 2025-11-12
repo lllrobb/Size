@@ -77,7 +77,6 @@ class Main extends PluginBase {
             return true;
         }
 
-        // Si especificó un jugador objetivo
         if (isset($args[2])) {
             if (!$sender->hasPermission("size.others")) {
                 $sender->sendMessage($this->getMessage("error_no_permission_others"));
@@ -103,7 +102,6 @@ class Main extends PluginBase {
             $target->sendActionBarMessage($targetMessage);
             $this->playSound($target);
         } else {
-            // Para sí mismo
             $this->setPlayerSize($sender, $size);
             $message = str_replace("{size}", (string)$size, $this->getMessage("size_changed_self"));
             $sender->sendActionBarMessage($message);
@@ -119,7 +117,6 @@ class Main extends PluginBase {
             return true;
         }
 
-        // Si especificó un jugador objetivo
         if (isset($args[1])) {
             if (!$sender->hasPermission("size.others")) {
                 $sender->sendMessage($this->getMessage("error_no_permission_reset_others"));
@@ -143,7 +140,6 @@ class Main extends PluginBase {
             $target->sendActionBarMessage($this->getMessage("size_reset_other_target"));
             $this->playSound($target);
         } else {
-            // Para sí mismo
             $this->setPlayerSize($sender, 1.0);
             $sender->sendActionBarMessage($this->getMessage("size_reset_self"));
             $this->playSound($sender);
@@ -171,7 +167,6 @@ class Main extends PluginBase {
     }
 
     private function setPlayerSize(Player $player, float $size): void {
-        // Define el tamaño del jugador usando la API de PocketMine-MP 5
         $player->setScale($size);
     }
 
@@ -180,7 +175,6 @@ class Main extends PluginBase {
             return;
         }
         
-        // Reproduce el sonido configurado para el jugador
         $packet = new PlaySoundPacket();
         $packet->soundName = $this->config->get("sounds")["sound_name"];
         $packet->x = $player->getPosition()->getX();
@@ -196,4 +190,5 @@ class Main extends PluginBase {
         $messages = $this->config->get("messages");
         return $messages[$key] ?? "§cMensaje no encontrado: " . $key;
     }
+
 }
