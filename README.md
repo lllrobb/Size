@@ -1,3 +1,5 @@
+# PLUGIN DESACTUALIZADO! YA NO JUEGO MINECRAFT BEDROCK EDITION
+# ESTOY TRATANDO DE HACER UN JUEGO EN ROBLOX STUDIO
 # Size Plugin para PocketMine-MP 5
 
 Plugin desarrollado por **ySimmer** que permite cambiar el tamaño de los jugadores en el servidor con notificaciones en ActionBar y efectos de sonido personalizables.
